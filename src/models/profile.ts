@@ -3,5 +3,6 @@ export interface Profile {
   title: string;
   country: string;
   localisation:string;
-  imageUrl:string;
+  imageUrl?:string;
+  info:string;
 }

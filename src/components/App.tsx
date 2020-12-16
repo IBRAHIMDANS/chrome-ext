@@ -16,13 +16,17 @@ export const App = () => {
     }
   }, [])
 
-  return (<div className="app">
-      <p>{state?.fullName}</p>
-      <p>{state?.localisation}</p>
-      <p>{state?.title}</p>
-      <p>{state?.country}</p>
-      <img height={200} width={200} src={state?.imageUrl}/>
-  </div>
+  return (<div className="app" style={{display: 'flex'}}>
+      <div style={{marginRight: "10px"}}>
+        {/*{state.imageUrl && <img height={200} width={200} src={state?.imageUrl}/>}*/}
+      </div>
+      <div>
+        <p>Full name: {state?.fullName}</p>
+        <p>Titre: {state?.title}</p>
+        <p>Localisation: {state?.localisation}</p>
+        <p>infos: {state?.info}</p>
+      </div>
+    </div>
   );
 }
 
