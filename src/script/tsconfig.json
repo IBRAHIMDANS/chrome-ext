@@ -16,14 +16,13 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "noImplicitAny": true,
-    "jsx": "react-jsx",
-    "sourceMap": true
+    "listEmittedFiles": true,
+    "sourceMap": true,
+    "outDir": "../../build/js/"
   },
   "include": [
-    "src"
-  ],
-  "exclude": ["./src/script"]
+    "./"
+  ]
 }
