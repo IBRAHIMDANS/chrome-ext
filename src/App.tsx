@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './App.css';
 
 function App() {
+
   useEffect(() => {
     if (chrome && chrome.tabs) {
       chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
@@ -15,6 +16,8 @@ function App() {
       });
     }
   }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
